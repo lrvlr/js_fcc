@@ -1,3 +1,5 @@
+export default numberWithDecimals;
+
 var numberWithDecimals = function (value, decimals, maxDecimals){
   this.value = value;
   this.decimals = decimals;
