@@ -69,4 +69,8 @@ export function numberWithDecimals (value, decimals, maxDecimals){
         this.round();
       }
   }
+  
+  return function(){
+    return this.value;
+  }
 }
