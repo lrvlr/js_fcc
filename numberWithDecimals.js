@@ -1,6 +1,4 @@
-export default numberWithDecimals;
-
-var numberWithDecimals = function (value, decimals, maxDecimals){
+export function numberWithDecimals (value, decimals, maxDecimals){
   this.value = value;
   this.decimals = decimals;
   this.max_decimals = maxDecimals;
