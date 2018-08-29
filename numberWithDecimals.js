@@ -3,7 +3,7 @@ var numberWithDecimals = function (value, decimals, maxDecimals){
   this.decimals = decimals;
   this.max_decimals = maxDecimals;
   
-  return function(){
+  this.getValue = function(){
     return this.value;
   }
   
