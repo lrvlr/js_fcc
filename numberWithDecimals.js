@@ -1,4 +1,4 @@
-export function numberWithDecimals (value, decimals, maxDecimals){
+var numberWithDecimals = function (value, decimals, maxDecimals){
   this.value = value;
   this.decimals = decimals;
   this.max_decimals = maxDecimals;
@@ -76,3 +76,5 @@ export function numberWithDecimals (value, decimals, maxDecimals){
   
 
 }
+
+export { numberWithDecimals };
