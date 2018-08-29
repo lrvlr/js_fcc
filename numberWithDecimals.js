@@ -3,6 +3,10 @@ export function numberWithDecimals (value, decimals, maxDecimals){
   this.decimals = decimals;
   this.max_decimals = maxDecimals;
   
+  return function(){
+    return this.value;
+  }
+  
   this.reset = function (){
     this.value = 0;
     this.decimals = 0;  
@@ -70,7 +74,5 @@ export function numberWithDecimals (value, decimals, maxDecimals){
       }
   }
   
-  return function(){
-    return this.value;
-  }
+
 }
