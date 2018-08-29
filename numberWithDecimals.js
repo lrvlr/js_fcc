@@ -48,7 +48,7 @@ export function numberWithDecimals (value, decimals, maxDecimals){
   
   this.pct = function (aNumberWithDecimals){
     this.mul(aNumberWithDecimals);
-    this.value = (parseFloat(this.value) / 100)
+    this.value = (parseFloat(this.value) / 100);
   }
   
   this.round = function (){
@@ -57,7 +57,7 @@ export function numberWithDecimals (value, decimals, maxDecimals){
   }
   
   this.equals = function(aNumberWithDecimals){
-    return ((this.round() - aNumberWithDecimals.round()) === 0 ) ;
+    return ((this.round() - aNumberWithDecimals.round()) === 0 );
   }
   
   this.eraseZerosAfterComma = function (){
